@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+	font: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fff;
+}
+
+hr {
+	border: 1px solid #539987;
+}
+
+.container {
+	width: 75%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+// variables - $name
+$noir: #0A0908;
+$bleu-blem: #22333B;
+$minty: #539987;
+$cloudy: #F2F4F3;
+$lexend: "Lexend", sans-serif;
+$libre-franklin: "Libre Franklin", sans-serif;
+$zilla-slab: "Zilla Slab", serif;
+$mukta: "Mukta", sans-serif;
+
+// mixins - @include
+@mixin nav-text {
+	font: 1rem $libre-franklin;
+	font-weight: 400;
+	color: $minty;
+}
+
+@mixin learn-more-btn {
+	width: 16rem;
+	height: 4rem;
+	display: block;
+	margin: auto;
+	border-radius: 0.625rem;
+	border: 1px solid $minty;
+	padding: 1rem 1.5rem;
+	gap: 1rem;
+	font: 1.25rem/2rem $mukta;
+	font-weight: 200;
+	text-decoration: none;
+	text-align: center;
+	color: $cloudy;
+	background-color: transparent;
+	
+}
+
+@mixin v-r-s-btn {
+	width: 8rem;
+	display: block;
+	margin: 0 auto;
+	border-radius: 0.5rem;
+	border: 1px solid $minty;
+	gap: 1rem;
+	font: 1rem/1.5rem $mukta;
+	font-weight: 100;
+	text-decoration: none;
+	text-align: center;
+	color: $bleu-blem;
+	background-color: transparent;
+	transition: all 0.3s;
+}
+
+/* navigation - all */
+.nav {
+	width: 100%;
+	height: 7.5rem;
+	background-color: $cloudy;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .25rem;
+	background-color: $cloudy;
+	.nav-logo {
+		width: 0.5rem;
+		height: 0.75rem;
+		align-content: flex-start;
+		}
+	ul {
+		list-style: none;
+		padding: 2.5rem;
+		display: flex;
+		margin: auto;
+		align-content: space-between;
+		li {
+			margin-right: 5rem;
+			font-size: 1rem;
+		}
+			a {
+				@include nav-text;
+				text-decoration: none;
+				&:hover {
+					color: $bleu-blem;
+				}
+			}
+	}
+}
+
+/* hero - home */
+.hero {
+	display: flex;
+	align-items: center;
+	background: url("../images/bw-xray.png") no-repeat;
+	background-size: cover;
+	height: 95vh;
+		h1 {
+			padding-top: 15rem;
+			font-family: $lexend;
+			font-weight: 100;
+			font-size: 3.5rem;
+			color: $cloudy;
+			text-align: center;
+		}
+		.hero-learn-more-btn {
+			@include learn-more-btn;
+			&:hover {
+				background-color: $minty;
+			}
+		}
+}
+
+/* hero - products */
+.hero-products {
+	display: flex;
+	align-items: center;
+	background: url("../images/rad-header.png") no-repeat;
+	background-size: cover;
+	height: 95vh;
+		h1 {
+			padding-top: 15rem;
+			font-family: $lexend;
+			font-weight: 100;
+			font-size: 3.5rem;
+			color: $cloudy;
+			text-align: center;
+		}
+}
+
+/* hero - resources */
+.hero-resources {
+	display: flex;
+	align-items: center;
+	background: url("../images/resource-header.png") no-repeat;
+	background-size: cover;
+	height: 95vh;
+		h1 {
+			padding-top: 15rem;
+			font-family: $lexend;
+			font-weight: 100;
+			font-size: 3.5rem;
+			color: $cloudy;
+			text-align: center;
+		}
+}
+
+/* hero - contact */ 
+.hero-contact {
+	display: flex;
+	align-items: center;
+	background: url("../images/doc-1.png") no-repeat;
+	background-size: cover;
+	height: 85vh;
+		h1 {
+			padding-top: 15rem;
+			font-family: $lexend;
+			font-weight: 200;
+			font-size: 3.5rem;
+			color: $cloudy;
+			text-align: center;
+		}
+}
+
+
+/* who we are - home */
+.who-we-are {
+	padding: 2rem;
+	margin: 0 auto;
+}
+
+h2 {
+	font: 2rem/2.5rem $libre-franklin;
+	font-weight: 400;
+	color: $bleu-blem;
+	text-align: center;
+	padding-top: 1.75rem;
+}
+
+.who-we-are-info {
+	display: flex;
+	gap: 2rem;
+	align-content: center;
+	justify-content: space-between;
+	padding: 1rem;
+	.wwa-box {
+		text-align: center;
+		img {
+		width: 4rem;
+		height: 5rem;
+		}
+		p {
+			font: 1rem/1.5rem $mukta;
+			font-weight: 300;
+			color: $noir;
+			text-align: center;
+		}
+	}
+}
+
+
+/* supplies */
+.supplies {
+	padding-bottom: 2rem;
+	margin: 0 auto;
+}
+
+h3 {
+	font: 1.5rem/2rem $zilla-slab;
+	font-weight: 400;
+	color: $bleu-blem;
+	text-align: left;
+	padding-top: 1.25rem; 
+}
+
+.feature {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	padding: 1rem;
+	.equipment-image {
+		text-align: center;
+		img {
+			width: 20rem;
+			height: 16rem;
+			padding-bottom: 1rem;
+		}
+		.view-more-btn {
+			@include v-r-s-btn;
+			&:hover {
+				background-color: $bleu-blem;
+				color: $cloudy;
+				border: none;
+			}
+		}
+	}
+}
+
+
+/* resources */
+.resources-feature {
+	padding-bottom: 2rem;
+	margin: 0 auto;
+}
+
+.resources-container {
+	display: flex;
+	gap: 5rem;
+}
+
+.resources-articles {
+	text-align: center;
+	width: 22rem;
+	margin: 0 auto;
+	img {
+		width: 22rem;
+		height: 16rem;
+		padding-top: 2rem;
+	}
+}
+
+.resources-title {
+	font: 1.5rem/2rem $zilla-slab;
+	font-weight: 200;
+	color: $minty;
+	text-align: left;
+}
+
+.resources-text {
+	height: 8rem;
+	font: 1rem/1.5rem $mukta;
+	font-weight: 300;
+	color: $noir;
+	text-align: left;
+}
+
+.read-more-btn {
+	@include v-r-s-btn;
+	&:hover {
+		background-color: $bleu-blem;
+		color: $cloudy;
+		border: none;
+	}
+}
+
+
+/* testimonials - home */
+.testimonials-feature {
+	padding-bottom: 2rem;
+	margin: 0 auto;
+}
+
+.testimonials-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.testimonials {
+	max-width: 35rem;
+	min-width: 22rem;
+	margin-top: 2rem;
+	padding: 0 2rem;
+	img {
+		margin: 0 auto;
+	}
+	.doc-image {
+		display: block;
+		width: 8rem;
+		height: 8rem;
+		margin-bottom: 1rem;
+	}
+	.stars {
+			display: block;
+			width: 10.5rem;
+			height: auto;	
+	}
+	
+	.doctor-name {
+		text-align: center;
+		margin-top: 1rem;
+	}
+	h5 {
+		margin: 0;
+		font: 1rem/1.5rem $zilla-slab;
+		font-weight: 600;
+		color: $bleu-blem;
+	}
+	h6 {
+		margin: 0;
+		font: 0.75rem/1rem $zilla-slab;
+		font-weight: 400;
+		color: $bleu-blem;
+	}
+	.testimonials-text {
+		height: 8rem;
+		font: 1rem/1.5rem $mukta;
+		font-weight: 200;
+		color: $noir;
+		text-align: center;
+	}
+	.see-more-btn {
+		@include v-r-s-btn;
+		&:hover {
+			background-color: $bleu-blem;
+			color: $cloudy;
+			border: none;
+		}
+	}
+}
+
+/* contact form */
+.form {
+	padding: 2rem;
+	margin: 0 auto;
+	min-width: 100%;
+	font-family: $mukta;
+	input {
+		width: 100%;
+		padding: 0.625rem;
+		background: none;
+		outline: none;
+		resize: none;
+		border: 0;
+		transition: all 0.3s;
+		border-bottom: 2px solid $bleu-blem;
+		&:focus {
+			border-bottom: 2px solid $minty;
+		}
+	}
+	p:before {
+		content: attr(type);
+		display: block;
+		margin: 1.75rem 0 0;
+		font-size: 1rem;
+		color: $bleu-blem;
+	}
+	button {
+		@include v-r-s-btn;
+		&:hover {
+			background-color: $bleu-blem;
+			color: $cloudy;
+			border: none;
+		}
+	}
+}
+
+
+/* footer - all */
+footer {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	background-color: $bleu-blem;
+	color: $cloudy;
+	font: 1.5rem/2rem $zilla-slab;
+	padding: 2rem 0;
+	.top-layer {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.footer-logo {
+		width: 0.5rem;
+		height: 0.75rem;
+	}
+}
+
+.footer-columns {
+		flex-direction: column;
+		align-items: center;
+}
+
+.footer-links {
+	display: flex;
+	padding-left: 10rem;
+	ul {
+		list-style-type: none;
+		padding: 2.5rem;
+		margin: auto;
+		align-content: space-between;
+		li {
+			margin-right: 5rem;
+			a {
+				color: $cloudy;
+				text-decoration: none;
+				font-size: 1.25rem;
+				&:hover {
+					color: $minty;
+				}
+			}
+		}
+	}
+}
+
+.footer-info {
+	text-align: left;
+	flex-direction: column;
+	font-size: 1rem;
+	margin-top: 1rem;
+	img {
+		width: 10rem;
+		height: auto;
+	}
+}
+
+.copyright {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: 100;
+}
+

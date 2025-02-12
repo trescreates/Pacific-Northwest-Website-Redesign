@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+html {
+  font: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff; }
+
+hr {
+  border: 1px solid #539987; }
+
+.container {
+  width: 75%;
+  max-width: 1440px;
+  margin: 0 auto; }
+
+/* navigation - all */
+.nav {
+  width: 100%;
+  height: 7.5rem;
+  background-color: #F2F4F3; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .25rem;
+  background-color: #F2F4F3; }
+  nav .nav-logo {
+    width: 0.5rem;
+    height: 0.75rem;
+    align-content: flex-start; }
+  nav ul {
+    list-style: none;
+    padding: 2.5rem;
+    display: flex;
+    margin: auto;
+    align-content: space-between; }
+    nav ul li {
+      margin-right: 5rem;
+      font-size: 1rem; }
+    nav ul a {
+      font: 1rem "Libre Franklin", sans-serif;
+      font-weight: 400;
+      color: #539987;
+      text-decoration: none; }
+      nav ul a:hover {
+        color: #22333B; }
+
+/* hero - home */
+.hero {
+  display: flex;
+  align-items: center;
+  background: url("../images/bw-xray.png") no-repeat;
+  background-size: cover;
+  height: 95vh; }
+  .hero h1 {
+    padding-top: 15rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+    color: #F2F4F3;
+    text-align: center; }
+  .hero .hero-learn-more-btn {
+    width: 16rem;
+    height: 4rem;
+    display: block;
+    margin: auto;
+    border-radius: 0.625rem;
+    border: 1px solid #539987;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    font: 1.25rem/2rem "Mukta", sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+    text-align: center;
+    color: #F2F4F3;
+    background-color: transparent; }
+    .hero .hero-learn-more-btn:hover {
+      background-color: #539987; }
+
+/* hero - products */
+.hero-products {
+  display: flex;
+  align-items: center;
+  background: url("../images/rad-header.png") no-repeat;
+  background-size: cover;
+  height: 95vh; }
+  .hero-products h1 {
+    padding-top: 15rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+    color: #F2F4F3;
+    text-align: center; }
+
+/* hero - resources */
+.hero-resources {
+  display: flex;
+  align-items: center;
+  background: url("../images/resource-header.png") no-repeat;
+  background-size: cover;
+  height: 95vh; }
+  .hero-resources h1 {
+    padding-top: 15rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+    color: #F2F4F3;
+    text-align: center; }
+
+/* hero - contact */
+.hero-contact {
+  display: flex;
+  align-items: center;
+  background: url("../images/doc-1.png") no-repeat;
+  background-size: cover;
+  height: 85vh; }
+  .hero-contact h1 {
+    padding-top: 15rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+    font-size: 3.5rem;
+    color: #F2F4F3;
+    text-align: center; }
+
+/* who we are - home */
+.who-we-are {
+  padding: 2rem;
+  margin: 0 auto; }
+
+h2 {
+  font: 2rem/2.5rem "Libre Franklin", sans-serif;
+  font-weight: 400;
+  color: #22333B;
+  text-align: center;
+  padding-top: 1.75rem; }
+
+.who-we-are-info {
+  display: flex;
+  gap: 2rem;
+  align-content: center;
+  justify-content: space-between;
+  padding: 1rem; }
+  .who-we-are-info .wwa-box {
+    text-align: center; }
+    .who-we-are-info .wwa-box img {
+      width: 4rem;
+      height: 5rem; }
+    .who-we-are-info .wwa-box p {
+      font: 1rem/1.5rem "Mukta", sans-serif;
+      font-weight: 300;
+      color: #0A0908;
+      text-align: center; }
+
+/* supplies */
+.supplies {
+  padding-bottom: 2rem;
+  margin: 0 auto; }
+
+h3 {
+  font: 1.5rem/2rem "Zilla Slab", serif;
+  font-weight: 400;
+  color: #22333B;
+  text-align: left;
+  padding-top: 1.25rem; }
+
+.feature {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 1rem; }
+  .feature .equipment-image {
+    text-align: center; }
+    .feature .equipment-image img {
+      width: 20rem;
+      height: 16rem;
+      padding-bottom: 1rem; }
+    .feature .equipment-image .view-more-btn {
+      width: 8rem;
+      display: block;
+      margin: 0 auto;
+      border-radius: 0.5rem;
+      border: 1px solid #539987;
+      gap: 1rem;
+      font: 1rem/1.5rem "Mukta", sans-serif;
+      font-weight: 100;
+      text-decoration: none;
+      text-align: center;
+      color: #22333B;
+      background-color: transparent;
+      transition: all 0.3s; }
+      .feature .equipment-image .view-more-btn:hover {
+        background-color: #22333B;
+        color: #F2F4F3;
+        border: none; }
+
+/* resources */
+.resources-feature {
+  padding-bottom: 2rem;
+  margin: 0 auto; }
+
+.resources-container {
+  display: flex;
+  gap: 5rem; }
+
+.resources-articles {
+  text-align: center;
+  width: 22rem;
+  margin: 0 auto; }
+  .resources-articles img {
+    width: 22rem;
+    height: 16rem;
+    padding-top: 2rem; }
+
+.resources-title {
+  font: 1.5rem/2rem "Zilla Slab", serif;
+  font-weight: 200;
+  color: #539987;
+  text-align: left; }
+
+.resources-text {
+  height: 8rem;
+  font: 1rem/1.5rem "Mukta", sans-serif;
+  font-weight: 300;
+  color: #0A0908;
+  text-align: left; }
+
+.read-more-btn {
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  border: 1px solid #539987;
+  gap: 1rem;
+  font: 1rem/1.5rem "Mukta", sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  text-align: center;
+  color: #22333B;
+  background-color: transparent;
+  transition: all 0.3s; }
+  .read-more-btn:hover {
+    background-color: #22333B;
+    color: #F2F4F3;
+    border: none; }
+
+/* testimonials - home */
+.testimonials-feature {
+  padding-bottom: 2rem;
+  margin: 0 auto; }
+
+.testimonials-container {
+  display: flex;
+  justify-content: space-between; }
+
+.testimonials {
+  max-width: 35rem;
+  min-width: 22rem;
+  margin-top: 2rem;
+  padding: 0 2rem; }
+  .testimonials img {
+    margin: 0 auto; }
+  .testimonials .doc-image {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1rem; }
+  .testimonials .stars {
+    display: block;
+    width: 10.5rem;
+    height: auto; }
+  .testimonials .doctor-name {
+    text-align: center;
+    margin-top: 1rem; }
+  .testimonials h5 {
+    margin: 0;
+    font: 1rem/1.5rem "Zilla Slab", serif;
+    font-weight: 600;
+    color: #22333B; }
+  .testimonials h6 {
+    margin: 0;
+    font: 0.75rem/1rem "Zilla Slab", serif;
+    font-weight: 400;
+    color: #22333B; }
+  .testimonials .testimonials-text {
+    height: 8rem;
+    font: 1rem/1.5rem "Mukta", sans-serif;
+    font-weight: 200;
+    color: #0A0908;
+    text-align: center; }
+  .testimonials .see-more-btn {
+    width: 8rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    border: 1px solid #539987;
+    gap: 1rem;
+    font: 1rem/1.5rem "Mukta", sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    text-align: center;
+    color: #22333B;
+    background-color: transparent;
+    transition: all 0.3s; }
+    .testimonials .see-more-btn:hover {
+      background-color: #22333B;
+      color: #F2F4F3;
+      border: none; }
+
+/* contact form */
+.form {
+  padding: 2rem;
+  margin: 0 auto;
+  min-width: 100%;
+  font-family: "Mukta", sans-serif; }
+  .form input {
+    width: 100%;
+    padding: 0.625rem;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all 0.3s;
+    border-bottom: 2px solid #22333B; }
+    .form input:focus {
+      border-bottom: 2px solid #539987; }
+  .form p:before {
+    content: attr(type);
+    display: block;
+    margin: 1.75rem 0 0;
+    font-size: 1rem;
+    color: #22333B; }
+  .form button {
+    width: 8rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    border: 1px solid #539987;
+    gap: 1rem;
+    font: 1rem/1.5rem "Mukta", sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    text-align: center;
+    color: #22333B;
+    background-color: transparent;
+    transition: all 0.3s; }
+    .form button:hover {
+      background-color: #22333B;
+      color: #F2F4F3;
+      border: none; }
+
+/* footer - all */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #22333B;
+  color: #F2F4F3;
+  font: 1.5rem/2rem "Zilla Slab", serif;
+  padding: 2rem 0; }
+  footer .top-layer {
+    display: flex;
+    justify-content: space-between; }
+  footer .footer-logo {
+    width: 0.5rem;
+    height: 0.75rem; }
+
+.footer-columns {
+  flex-direction: column;
+  align-items: center; }
+
+.footer-links {
+  display: flex;
+  padding-left: 10rem; }
+  .footer-links ul {
+    list-style-type: none;
+    padding: 2.5rem;
+    margin: auto;
+    align-content: space-between; }
+    .footer-links ul li {
+      margin-right: 5rem; }
+      .footer-links ul li a {
+        color: #F2F4F3;
+        text-decoration: none;
+        font-size: 1.25rem; }
+        .footer-links ul li a:hover {
+          color: #539987; }
+
+.footer-info {
+  text-align: left;
+  flex-direction: column;
+  font-size: 1rem;
+  margin-top: 1rem; }
+  .footer-info img {
+    width: 10rem;
+    height: auto; }
+
+.copyright {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 100; }
